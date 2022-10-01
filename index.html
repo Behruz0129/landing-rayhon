@@ -596,12 +596,13 @@
                 qilishingiz yoki pauza qilishingiz mumkin. Va birinchi taom
                 bizda!
               </div>
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">To'liq ismi sharif</label>
                   <input
                     id="full-name"
                     type="text"
+                    name="full-name"
                     placeholder="Nasriddin Afandi"
                     required
                   />
@@ -612,13 +613,14 @@
                     id="email"
                     type="email"
                     placeholder="palonchi@namuna.uz"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="select-where">Bizni qayerdan eshitdingiz?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">Iltimos bitta variantni tanlang</option>
                     <option value="friends">Do'stlar va oila</option>
                     <option value="youtube">YouTube video</option>
